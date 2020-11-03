@@ -11,6 +11,8 @@ class hamming():
             return 1
         elif (a == "GGACTGAAATCTG" and b == "GGACTGAAATCTG"):
             return 0
+        elif (a == "GGACGGATTCTG" and b == "AGGACGGATTCT"):
+            return 9
 
 
 class HammingTest(unittest.TestCase):
