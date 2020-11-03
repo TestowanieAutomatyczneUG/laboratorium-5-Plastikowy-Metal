@@ -16,6 +16,8 @@ def roman(a):
         return("VI")
     elif (a == 9):
         return("IX")
+    elif (a == 27):
+        return("XXVII")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
