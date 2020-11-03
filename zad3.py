@@ -75,7 +75,6 @@ class PiosenkaTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             Piosenka.wersy(13)
 
-    @unittest.skip
     def test_8_first_range_bigger(self):
         with self.assertRaisesWithMessage(ValueError):
             Piosenka.wersy(10,2)
