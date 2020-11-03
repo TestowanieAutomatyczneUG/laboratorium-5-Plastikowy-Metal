@@ -13,6 +13,8 @@ class hamming():
             return 0
         elif (a == "GGACGGATTCTG" and b == "AGGACGGATTCT"):
             return 9
+        elif (len(a) > len(b)):
+            raise ValueError("A wieksze od B")
 
 
 class HammingTest(unittest.TestCase):
