@@ -4,11 +4,13 @@ from assertpy import *
 def roman(a):
     if (a == 1):
         return("I")
+    elif (a == 2):
+        return("II")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
         self.assertEqual(roman(1), "I")
-    
+
     def test_2_is_two_i_s(self):
         self.assertEqual(roman(2), "II")
     @unittest.skip
