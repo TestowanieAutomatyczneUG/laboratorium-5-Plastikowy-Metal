@@ -19,6 +19,9 @@ class Piosenka():
             return(song[a - 1])
         elif(type(a) == int and type(b) == int):
             return(song[a-1:b])
+        elif(a == "all" and b == "brak"):
+            return(song[0:])
+
 
 class PiosenkaTest(unittest.TestCase):
     def test_1_line_1(self):
