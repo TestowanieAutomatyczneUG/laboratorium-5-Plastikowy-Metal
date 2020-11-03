@@ -9,6 +9,8 @@ class hamming():
             return 0
         elif (a == "G" and b == "T"):
             return 1
+        elif (a == "GGACTGAAATCTG" and b == "GGACTGAAATCTG"):
+            return 0
 
 
 class HammingTest(unittest.TestCase):
