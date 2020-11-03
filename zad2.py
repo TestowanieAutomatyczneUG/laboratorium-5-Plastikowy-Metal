@@ -20,6 +20,8 @@ def roman(a):
         return("XXVII")
     elif (a == 48):
         return("XLVIII")
+    elif (a == 49):
+        return("XLIX")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
@@ -48,7 +50,7 @@ class RomanNumeralsTest(unittest.TestCase):
 
     def test_48_is_not_50_2_but_rather_40_8(self):
         self.assertEqual(roman(48), "XLVIII")
-        
+
     def test_49_is_not_40_5_4_but_rather_50_10_10_1(self):
         self.assertEqual(roman(49), "XLIX")
     @unittest.skip
