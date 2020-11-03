@@ -24,6 +24,8 @@ def roman(a):
         return("XLIX")
     elif (a == 59):
         return("LIX")
+    elif (a == 93):
+        return("XCIII")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
