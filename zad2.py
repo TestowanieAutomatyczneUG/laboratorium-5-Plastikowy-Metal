@@ -6,6 +6,8 @@ def roman(a):
         return("I")
     elif (a == 2):
         return("II")
+    elif (a == 3):
+        return("III")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
