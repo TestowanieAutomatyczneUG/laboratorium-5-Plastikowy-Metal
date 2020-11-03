@@ -27,9 +27,9 @@ class PiosenkaTest(unittest.TestCase):
     def test_2_line_5(self):
         self.assertEqual(Piosenka.wersy(5),
         "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
-    @unittest.skip
+
     def test_3_line_12(self):
-        self.assertEqual(Piosenka.wersy(5),
+        self.assertEqual(Piosenka.wersy(12),
         "On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
     @unittest.skip
     def test_4_lines_1_to_4(self):
