@@ -17,6 +17,8 @@ class Piosenka():
 
         if(type(a) == int and b == "brak"):
             return(song[a - 1])
+        elif(type(a) == int and type(b) == int):
+            return(song[a-1:b])
 
 
 class PiosenkaTest(unittest.TestCase):
