@@ -40,7 +40,7 @@ class PiosenkaTest(unittest.TestCase):
          "On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.",
          "On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.",
          "On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."])
-    @unittest.skip
+
     def test_5_lines_6_to_12(self):
         self.assertEqual(Piosenka.wersy(6,12),
                 ["On the sixth day of Christmas my true love gave to me: six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.",
