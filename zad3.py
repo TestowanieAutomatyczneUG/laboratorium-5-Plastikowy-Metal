@@ -17,10 +17,13 @@ class Piosenka():
         if(type(a) == int):
             if (a > 12 or a < 1):
                 raise ValueError("Podany numer wersu nie miesci sie w zakresie")
-            elif(type(a) == int and b == "brak"):
-                return(song[a - 1])
-            elif(type(a) == int and type(b) == int):
-                return(song[a-1:b])
+            if(type(b) == int):
+                if(a > b):
+                    raise ValueError("Pierwsza wartosc jest wieksza od drugiej")
+                elif(type(a) == int and type(b) == int):
+                    return(song[a-1:b])
+            elif (type(a) == int and b == "brak"):
+                return (song[a - 1])
         elif(a == "all" and b == "brak"):
             return(song[0:])
 
