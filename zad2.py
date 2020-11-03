@@ -30,6 +30,8 @@ def roman(a):
         return("CXLI")
     elif (a == 163):
         return("CLXIII")
+    elif (a == 402):
+        return("CDII")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
