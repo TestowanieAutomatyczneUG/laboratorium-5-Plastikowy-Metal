@@ -24,8 +24,12 @@ class Piosenka():
                     return(song[a-1:b])
             elif (type(a) == int and b == "brak"):
                 return (song[a - 1])
-        elif(a == "all" and b == "brak"):
-            return(song[0:])
+        elif(type(a) == str):
+            if(a == "all" and b == "brak"):
+                return(song[0:])
+            elif(a != "all"):
+                raise ValueError("Wartosc jest stringiem")
+
 
 
 
@@ -81,7 +85,7 @@ class PiosenkaTest(unittest.TestCase):
     def test_8_first_range_bigger(self):
         with self.assertRaisesWithMessage(ValueError):
             Piosenka.wersy(10,2)
-    @unittest.skip
+
     def test_9_is_int(self):
         with self.assertRaisesWithMessage(ValueError):
             Piosenka.wersy("15")
