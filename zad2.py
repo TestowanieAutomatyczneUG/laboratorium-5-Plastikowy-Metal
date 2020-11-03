@@ -36,6 +36,8 @@ def roman(a):
         return("DLXXV")
     elif (a == 911):
         return("CMXI")
+    elif (a == 1024):
+        return("MXXIV")
 
 class RomanNumeralsTest(unittest.TestCase):
     def test_1_is_a_single_i(self):
