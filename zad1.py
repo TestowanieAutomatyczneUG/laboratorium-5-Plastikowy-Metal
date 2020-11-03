@@ -15,6 +15,9 @@ class hamming():
             return 9
         elif (len(a) > len(b)):
             raise ValueError("A wieksze od B")
+        elif (len(a) < len(b)):
+            raise ValueError("B wieksze od A")
+
 
 
 class HammingTest(unittest.TestCase):
