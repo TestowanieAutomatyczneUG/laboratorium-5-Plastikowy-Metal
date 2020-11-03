@@ -15,7 +15,7 @@ class Piosenka():
                 "On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.",
                 "On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."]
 
-        if(a == 1 and b == "brak"):
+        if(type(a) == int and b == "brak"):
             return(song[a - 1])
 
 
@@ -23,7 +23,7 @@ class PiosenkaTest(unittest.TestCase):
     def test_1_line_1(self):
         self.assertEqual(Piosenka.wersy(1),
         "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.")
-    @unittest.skip
+
     def test_2_line_5(self):
         self.assertEqual(Piosenka.wersy(5),
         "On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.")
